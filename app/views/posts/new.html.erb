@@ -1,0 +1,8 @@
+<%= form_tag("/posts/create", method: "post") do %>
+  제목
+  <%= text_field_tag (:title) %>
+  내용
+  <%= text_area_tag (:content) %>
+  <%= submit_tag ("submit") %>
+
+<%end%>

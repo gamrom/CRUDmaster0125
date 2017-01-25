@@ -1,0 +1,12 @@
+<% @every_post.each do |post| %>
+
+ <%= link_to("#{post.title}", "/posts/show/#{post.id}") %> 
+</br>
+ <%= link_to("edit", "/posts/edit/#{post.id}") %></br>
+ <%= link_to("delete", "/posts/delete/#{post.id}") %>
+
+</br></br>
+
+<%end%>
+</br></br>
+<%= link_to("create", "/posts/new") %>
